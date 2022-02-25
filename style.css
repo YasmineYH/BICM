@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #002640;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 37px;
+    text-shadow: 0 0 .3px #002640;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 37px;
+    text-shadow: 0 0 .3px #002640;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 0 0 .3px #002640;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 15px;
+    text-shadow: 0 0 .3px #002640;
+}
+
+.normal-p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    text-shadow: 0 0 .5px #002640;
+}
+
+.main-btn {
+    display: block;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 3px;
+    color: #ffffff;
+    background: #FF6C2E;
+    box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+}
+
+
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 7vw 0 7vw;
+}
+
+nav h1 {
+    font-size: 23px;
+    padding-top: 5px;
+    text-shadow: 0 0 .8px #002640, 0 0 .7px #002640;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35vw;
+}
+
+nav ul li {
+    padding: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+    text-shadow: 0 0 .3px #002640;
+}
+
+
+
+
+
+.header-txt {
+    width: 500px;
+    text-align: right;
+    margin: 185px 7vw 0 auto;
+}
+
+.header-txt p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12.5px;
+    letter-spacing: 0.05em;
+    margin-bottom: 25px;
+}
+
+.header-graphic {
+    width: calc(100% - 9vw + 30px);
+    margin: -60px 9vw 50px -30px;
+}
+
+header .main-btn {
+    margin: auto;
+}
+
+
+
+
+
+section {
+    margin: 200px 8vw 0 8vw;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 600px;
+    margin: 0 auto 75px auto;
+    text-align: center;
+}
+
+.what-we-do-ctn {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.what-we-do {
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.what-we-do img {
+    width: 250px;
+}
+
+.what-we-do:nth-of-type(2) img {
+    order: 1;
+}
+
+.what-we-do div {
+    width: 350px;
+    text-align: justify;
+    padding-top: 5px;
+}
+
+.what-we-do div h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.benefit-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    height: 500px;
+    border-radius: 40px;
+    border: 3px solid #002640;
+    background-size: contain;
+    background-image: url(./images/gradient.png)
+}
+
+.benefit-section .title {
+    width: 500px;
+    margin: 0 auto 30px auto;
+}
+
+.benefit-section .title h2,
+.benefit-section .title p {
+    color: #ffffff;
+}
+
+
+
+
+
+.client-reviews-ctn {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 120px 0 120px;
+}
+
+.client-review {
+    position: relative;
+    border-radius: 20px;
+    width: 245px;
+    height: 215px;
+    background: linear-gradient(#ffffff, #002640);
+    z-index: 2;
+}
+
+.client-review::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 241px;
+    z-index: -1;
+    border-radius: 18px;
+    height: calc(100% - 4px);
+    background: #ffffff;
+}
+
+.client-review img {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    width: 100px;
+}
+
+.client-review .review-title {
+    text-align: center;
+    margin: 65px auto 15px auto;
+}
+
+.client-review .review-title p {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.client-review p {
+    width: 75%;
+    margin: auto;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+}
+
+.client-review .stars {
+    width: fit-content;
+    margin: 20px auto 10px auto;
+}
+
+.client-review .stars svg {
+    width: 12px;
+    height: 12px;
+}
+
+
+
+
+
+.why-trust-us {
+    height: 750px;
+    margin: 200px 0 0 0;
+    padding: 100px 8vw;
+    background: rgba(0, 38, 64, 0.05);
+}
+
+.why-trust-us .title {
+    margin: 0 auto 75px 0;
+    text-align: left;
+    width: 550px;
+}
