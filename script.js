@@ -5,7 +5,7 @@ burger.addEventListener('click', () => {
 
     if (nav.style.visibility == 'visible') {
         nav.style.visibility = 'hidden'
-        nav.style.transform = 'scale(0) translateX(2000px)'
+        nav.style.transform = 'scale(0) translate(2000px, -400px)'
         console.log('none added')
     } else if (nav.style.visibility == 'hidden' || nav.style.visibility.length < 1) {
         nav.style.visibility = 'visible'
