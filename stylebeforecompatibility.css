@@ -16,26 +16,22 @@ h1 {
     font-weight: 800;
     font-size: 32px;
     line-height: 50px;
-    text-shadow: 0 0 .3px #002640;
 }
 
 h2 {
     font-weight: 800;
     font-size: 28px;
     line-height: 37px;
-    text-shadow: 0 0 .3px #002640;
 }
 
 h3 {
     font-weight: 700;
     font-size: 20px;
-    text-shadow: 0 0 .3px #002640;
 }
 
 h4 {
     font-weight: 700;
     font-size: 15px;
-    text-shadow: 0 0 .3px #002640;
 }
 
 .normal-p {
@@ -47,7 +43,6 @@ h4 {
 .bold-p {
     font-weight: 500;
     font-size: 20px;
-    text-shadow: 0 0 .3px #002640;
 }
 
 .main-btn {
@@ -120,7 +115,6 @@ nav {
 nav h1 {
     font-size: 23px;
     padding-top: 5px;
-    text-shadow: 0 0 .8px #002640, 0 0 .7px #002640;
     cursor: pointer;
 }
 
@@ -177,28 +171,29 @@ nav ul li a:hover {
     }
 
     header nav ul {
-        visibility: hidden;
+        opacity: 0;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        gap: 25px;
         position: fixed;
         top: 10px;
         right: 3vw;
         background: #002640;
-        padding: 45px 0;
-        height: 75vh;
+        height: 55vh;
         min-height: 500px;
         width: 75vw;
         max-width: 450px;
         border-radius: 21px;
         z-index: 10;
-        transform: scale(0) translate(2000px, -400px);
-        transform-origin: top right;
-        transition: all .5s ease-out;
+        transform: scale(0) translate(1200px, 0px);
+        transition: all .7s ease;
     }
 
     nav ul li {
-        padding: 25px 45px;
+        padding: 15px 45px;
         width: 100%;
+        text-align: center;
     }
 
     nav ul li a {
@@ -259,6 +254,8 @@ nav ul li a:hover {
 
 .other-header-txt h1 {
     font-size: 35px;
+    text-align: right;
+    margin: 135px 7vw 0 auto;
 }
 
 .header-txt p {
@@ -313,7 +310,7 @@ header .main-btn {
     .header-txt {
         width: 80vw;
         text-align: center;
-        margin: 145px auto 0 auto;
+        margin: 75px auto 0 auto;
     }
 
     .header-txt p {
@@ -365,7 +362,7 @@ section {
 .what-we-do-ctn {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 45px;
     justify-content: center;
 }
 
@@ -377,11 +374,11 @@ section {
 }
 
 .what-we-do img {
-    width: 135px;
+    width: 175px;
 }
 
 .what-we-do div {
-    width: 350px;
+    width: 370px;
     text-align: center;
     padding-top: 5px;
 }
@@ -467,7 +464,7 @@ section {
     align-items: center;
     gap: 15px;
     justify-content: center;
-    padding: 100px 0;
+    padding: 75px 0;
     border-radius: 40px;
     border: 3px solid #002640;
     background-size: cover;
@@ -507,7 +504,7 @@ section {
 /* HOME REVIEWS SECTION */ 
 .client-reviews-ctn {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 45px;
     row-gap: 85px;
     flex-wrap: wrap;
@@ -586,7 +583,7 @@ section {
 .why-trust-us-section {
     height: 750px;
     margin: 200px 0 0 0;
-    padding: 100px 8vw;
+    padding: 60px 8vw;
     background: rgba(0, 38, 64, 0.05);
 }
 
@@ -632,7 +629,7 @@ section {
     }
 
     .why-trust-us-section .title {
-        margin: 0 auto 75px 0;
+        margin: 0 auto 45px 0;
         width: 70vw;
     }
 
@@ -661,7 +658,10 @@ section {
     }
 
     .why-trust-us-section .title {
-        margin: 0 auto 45px 0;
+        margin: 0 auto 25px 0;
+    }
+    .why-trust-us-ctn {
+        row-gap: 25px;
     }
 
     .why-trust-us {
@@ -688,7 +688,7 @@ section {
 .members-section .client-review .review-title p {
     width: 85%;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 14px;    
     text-transform: uppercase;
 }
 
@@ -753,7 +753,7 @@ section {
     margin-bottom: 25px;
     border: none;
     outline: none;
-    font-family: 'Josefin Sans';
+    font-family: 'Montserrat';
     padding: 2px 5px;
     border-bottom: 2px solid;
 }
@@ -795,7 +795,7 @@ section {
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 540px) {
     .contact-section {
         padding: 45px 0;
         height: 345px;
@@ -803,8 +803,8 @@ section {
 
     .contact-section form {
         bottom: -122px;
-        height: 265px;
-        padding: 70px 45px;
+        height: 225px;
+        padding: 45px 45px;
     }
 }
 
@@ -905,7 +905,7 @@ footer .copyright {
 
 /* ABOUT PAGE */
 .about-benefit-section {
-    margin: 150px 8vw 0 8vw;
+    margin: 135px 8vw 0 8vw;
     background-image: url(./images/gradient-larger.png)
 }
 
@@ -968,7 +968,7 @@ footer .copyright {
 
 @media (max-width: 640px) {
     .about-location .title {
-        width: 85vw;
+        width: 75vw;
         margin: 0 auto 25px auto;
     }
 }
@@ -1074,12 +1074,12 @@ footer .copyright {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 3px;
-    column-gap: 3px;
+    row-gap: 10px;
+    column-gap: 10px;
     place-items: center;
     width: fit-content;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 135px;
     margin-bottom: 215px;
 }
 
@@ -1205,7 +1205,7 @@ footer .copyright {
     }
 
     .services .service .service-title h5 {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         width: 95%;
     }
 
@@ -1218,7 +1218,7 @@ footer .copyright {
     }
 
     .services .service:nth-of-type(2n) .service-title h5 {
-        margin: auto;
+        margin: 0 auto 10px auto;
     }
 }
 
@@ -1233,7 +1233,7 @@ footer .copyright {
     }
 
     .services .service img {
-        width: 200px;
+        width: 175px;
     }
 
     .services .service .service-title h5 {
@@ -1253,7 +1253,7 @@ footer .copyright {
     margin: auto;
     gap: 25px;
     flex-wrap: wrap;
-    margin-top: 150px;
+    margin-top: 135px;
     margin-bottom: 215px;
 }
 
@@ -1328,7 +1328,7 @@ footer .copyright {
 
 .form-ctn {
     width: 68vw;
-    height: 528px;
+    height: 565px;
     background: linear-gradient(180deg, #00264000, #002640);
     border-radius: 40px;
     margin: auto;
@@ -1338,12 +1338,17 @@ footer .copyright {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 75px;
     border-radius: 37px;
     padding: 80px 7vw 50px 7vw;
     width: calc(68vw - 6px);
+    height: calc(565px - 3px);
     background: #ffffff;
     margin: auto;
+}
+
+.contact-form .main-btn {
+    padding: 12px 0 11px 0;
 }
 
 .contact-form .form-main {
@@ -1401,13 +1406,14 @@ footer .copyright {
 @media (max-width: 840px) {
     .form-ctn {
         width: 85vw;
-        height: 489px;
+        height: 523px;
     }
 
     .contact-form {
-        padding: 40px 7vw 50px 7vw;
+        padding: 50px 7vw 50px 7vw;
         width: calc(85vw - 6px);
         background: #ffffff;
+        height: 520px;
         margin: auto;
     }
 }
@@ -1415,7 +1421,11 @@ footer .copyright {
 @media (max-width: 640px) {
     .form-ctn {
         width: 85vw;
-        height: 750px;
+        height: 805px;
+    }
+
+    .contact-form {
+        height: 802px;
     }
 
     .contact-form .form-main {
@@ -1423,6 +1433,10 @@ footer .copyright {
         flex-direction: column;
         justify-content: center;
         gap: 25px;
+    }
+
+    .contact-form .main-btn {
+        padding: 7px 0 6px 0;
     }
 
     .contact-form .form-main .form-group {
