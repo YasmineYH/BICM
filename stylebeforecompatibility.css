@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     color: #002640;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -13,21 +13,21 @@ body {
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 29px;
-    line-height: 37px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 50px;
     text-shadow: 0 0 .3px #002640;
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 26px;
+    font-weight: 800;
+    font-size: 28px;
     line-height: 37px;
     text-shadow: 0 0 .3px #002640;
 }
 
 h3 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     text-shadow: 0 0 .3px #002640;
 }
@@ -39,10 +39,9 @@ h4 {
 }
 
 .normal-p {
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 25px;
-    text-shadow: 0 0 .5px #002640;
 }
 
 .bold-p {
@@ -55,15 +54,15 @@ h4 {
     display: block;
     border: none;
     outline: none;
-    width: 200px;
-    height: 35px;
-    font-size: 16px;
-    font-weight: 700;
-    padding-top: 3px;
+    width: 225px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 1px;
     color: #ffffff;
     background: #FF6C2E;
     box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
-    border-radius: 3px;
+    border-radius: 105px;
     cursor: pointer;
     transition: all .3s ease-out;
 }
@@ -74,7 +73,7 @@ h4 {
 
 @media (max-width: 640px) {
     .main-btn {
-        width: 150px;
+        width: 175px;
         height: 30px;
         font-size: 13px;
     }
@@ -253,7 +252,7 @@ nav ul li a:hover {
 
 /* HOME HEADER */ 
 .header-txt {
-    width: 500px;
+    width: 70VW;
     text-align: right;
     margin: 185px 7vw 0 auto;
 }
@@ -272,7 +271,7 @@ nav ul li a:hover {
 
 .header-graphic {
     width: calc(100% - 9vw + 30px);
-    margin: -60px 9vw 50px -30px;
+    margin: -150px 9vw 50px -30px;
 }
 
 .header-graphic-tablet {
@@ -287,7 +286,13 @@ header .main-btn {
     margin: auto;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1120px) {
+    .header-graphic {
+        margin: -100px 9vw 50px -30px;
+    }
+}
+
+@media (max-width: 1000px) {
     .header-txt {
         width: 80vw;
         margin: 145px 7vw 0 auto;
@@ -345,7 +350,7 @@ header .main-btn {
 
 /* HOME WHAT WE DO SECTION */ 
 section {
-    margin: 200px 8vw 0 8vw;
+    margin: 175px 8vw 0 8vw;
 }
 
 .title {
@@ -359,34 +364,31 @@ section {
 
 .what-we-do-ctn {
     display: flex;
-    flex-direction: column;
-    gap: 125px;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
 }
 
 .what-we-do {
-    padding: 0 10vw;
     display: flex;
+    gap: 25px;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 .what-we-do img {
-    width: 250px;
-}
-
-.what-we-do:nth-of-type(2) img {
-    order: 1;
+    width: 135px;
 }
 
 .what-we-do div {
     width: 350px;
-    text-align: justify;
+    text-align: center;
     padding-top: 5px;
 }
 
 .what-we-do div h3 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 @media (min-width: 1740px) {
@@ -398,10 +400,6 @@ section {
 @media (max-width: 1140px) {
     .what-we-do {
         padding: 0 0;
-    }
-
-    .what-we-do img {
-        width: 200px;
     }
 }
 
@@ -420,18 +418,8 @@ section {
         gap: 45px;
     }
 
-    .what-we-do {
-        flex-direction: column;
-        justify-content: unset;
-        gap: 45px;
-    }
-
-    .what-we-do:nth-of-type(2) img {
-        order: unset;
-    }
-
     .what-we-do img {
-        width: 200px;
+        width: 135px;
     }
 }
 

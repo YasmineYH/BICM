@@ -17,6 +17,35 @@ burger.addEventListener('click', () => {
         burger.classList.remove('clicked')
     } else {
         burger.classList.add('clicked')
-    }
-    
+    }   
 })
+
+
+
+
+
+//Practise Area
+function createSquare(length) {
+    return {
+        length,
+        area: function() {
+            console.log(this.length * 4)
+        }
+    }
+}
+
+const circle = createSquare(40)
+console.log(circle.area())
+
+
+
+function Square(length) {
+    this.length = length,
+    this.area = function() {
+        console.log(this.length * 4)
+    }
+}
+
+const another = new Square(4)
+console.log(another.area())
+
