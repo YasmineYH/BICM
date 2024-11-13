@@ -106,6 +106,11 @@ h4 {
 
 /* NAVIGATION */ 
 nav {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px solid;
+    width: 100%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -317,6 +322,10 @@ header .main-btn {
         margin-bottom: 10px;
         font-size: 11px;
         line-height: 17px;
+    }
+
+    .other-header-txt h1 {
+        margin: 75px 7vw 0 auto;
     }
 
     .header-graphic-tablet {
@@ -581,7 +590,7 @@ section {
 
 /* HOME WHY TRUST US SECTION */ 
 .why-trust-us-section {
-    height: 750px;
+    height: 845px;
     margin: 200px 0 0 0;
     padding: 60px 8vw;
     background: rgba(0, 38, 64, 0.05);
@@ -600,11 +609,10 @@ section {
     grid-template-columns: 1fr 1fr;
     width: fit-content;
     margin-left: auto;
-    padding-right: 100px;
 }
 
 .why-trust-us {
-    width: 250px;
+    width: 450px;
 }
 
 .why-trust-us svg {
@@ -621,7 +629,7 @@ section {
     margin-bottom: 5px;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1240px) {
     .why-trust-us-section {
         height: auto;
         margin: 150px 0 0 0;
@@ -976,11 +984,7 @@ footer .copyright {
 
 
 .about-staff {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    place-items: center;
-    row-gap: 115px;
+    /* border: 1px solid; */
 }
 
 @media (max-width: 940px) {
