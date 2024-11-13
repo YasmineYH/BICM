@@ -477,7 +477,7 @@ section {
     border-radius: 40px;
     border: 3px solid #002640;
     background-size: cover;
-    background-image: url(./images/gradient.png);
+    background-image: url(./images/optimized_images/gradient.png);
 }
 
 .benefit-section .title {
@@ -730,7 +730,7 @@ section {
     border: 3px solid #002640;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/gradient-image.png)
+    background-image: url(./images/optimized_images/gradient-image.png)
 }
 
 .contact-section .title {
@@ -752,7 +752,7 @@ section {
     height: 315px;
     padding: 110px 115px;
     background-size: cover;
-    background-image: url(./images/form-bg.png);
+    background-image: url(./images/optimized_images/form-bg.png);
 }
 
 .contact-section form input {
@@ -826,7 +826,7 @@ footer {
     padding: 75px;
     background-size: cover;
     background-position: center;
-    background-image: url(./images/gradient-larger.png);
+    background-image: url(./images/optimized_images/gradient-larger.png);
     border: 1px solid black;
 }
 
@@ -914,7 +914,7 @@ footer .copyright {
 /* ABOUT PAGE */
 .about-benefit-section {
     margin: 135px 8vw 0 8vw;
-    background-image: url(./images/gradient-larger.png)
+    background-image: url(./images/optimized_images/gradient-larger.png)
 }
 
 .about-benefit-section .title {
@@ -943,7 +943,7 @@ footer .copyright {
 
 
 .about-location {
-    background-image: url(./images/gradient-larger.png)
+    background-image: url(./images/optimized_images/gradient-larger.png)
 }
 
 .about-location .title {
@@ -983,9 +983,6 @@ footer .copyright {
 
 
 
-.about-staff {
-    /* border: 1px solid; */
-}
 
 @media (max-width: 940px) {
     .about-staff {
@@ -1096,7 +1093,7 @@ footer .copyright {
     width: 265px;
     height: 125px;
     padding: 0 20px;
-    background-image: url(./images/gradient-larger.png);
+    background-image: url(./images/optimized_images/gradient-larger.png);
     background-size: cover;
     border-radius: 25px;
     font-size: 15px;
