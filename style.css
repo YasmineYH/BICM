@@ -73,6 +73,11 @@ h4 {
     transition: all .3s ease-out;
 }
 
+.main-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .main-btn:hover {
     background: #002640;
 }
@@ -822,6 +827,11 @@ section {
 
 
 /* HOME CONTACT SECTION */ 
+#contact-form {
+    width: 100px;
+    height: 1px;
+}
+
 .contact-section {
     position: relative;
     height: 375px;
