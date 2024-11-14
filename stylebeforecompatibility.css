@@ -555,7 +555,8 @@ section {
 
 .client-review .review-title p {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 20px;
     text-align: center;
     margin-top: 2px;
 }
@@ -983,12 +984,45 @@ footer .copyright {
 
 
 
+.temporary-staff {
+    margin-top: 100px;
+}
+
+.temporary-staff .about-temp-staff {
+    padding: 35px 20px 0 20px;
+}
+
+.temporary-staff .about-temp-staff .client-review {
+    width: 335px;
+    height: 150px;
+}
+
+.temporary-staff .about-temp-staff .client-review::after {
+    width: 331px;
+}
 
 @media (max-width: 940px) {
     .about-staff {
         display: flex;
         row-gap: 115px;
         margin-top: 65px;
+    }
+
+    .temporary-staff .about-temp-staff {
+        display: flex;
+        row-gap: 115px;
+        margin-top: 65px;
+    }
+}
+
+@media (max-width: 640px) {
+    .temporary-staff .about-temp-staff .client-review {
+        width: 275px;
+        height: 145px;
+    }
+    
+    .temporary-staff .about-temp-staff .client-review::after {
+        width: 271px;
     }
 }
 
